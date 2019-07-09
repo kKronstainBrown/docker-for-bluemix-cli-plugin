@@ -23,7 +23,7 @@ subcollection: containers
 {:download: .download}
 
 
-# {{site.data.keyword.containerlong_notm}} CLI 1
+# {{site.data.keyword.containerlong_notm}} CLI 2
 
 
 {: #cs_cli_reference}
