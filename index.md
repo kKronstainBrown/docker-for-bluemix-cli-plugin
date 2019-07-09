@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-07-08"
+lastupdated: "2019-07-09"
 
 keywords: kubernetes, iks, ibmcloud, ic, ks
 
@@ -23,7 +23,7 @@ subcollection: containers
 {:download: .download}
 
 
-# {{site.data.keyword.containerlong_notm}} CLI 20
+# {{site.data.keyword.containerlong_notm}} CLI 1
 
 
 {: #cs_cli_reference}
