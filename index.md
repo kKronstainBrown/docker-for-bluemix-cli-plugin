@@ -34,7 +34,7 @@ Refer to those commands to create and manage Kubernetes clusters in {{site.data.
 To install the plug-in, see [Installing the CLI](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps).
 To install the plug-in, see [Installing the CLI](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps).
 
-In the terminal, you are notified when updates to the `ibmcloudKKB10` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
+In the terminal, you are notified when updates to the `ibmcloud11` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
 
 Looking for `ibmcloud cr` commands? See the [{{site.data.keyword.registryshort_notm}} CLI reference](/docs/services/Registry?topic=container-registry-cli-plugin-containerregcli). Looking for `kubectl` commands? See the [Kubernetes documentation ![External link icon](../icons/launch-glyph.svg "External link icon")](https://kubectl.docs.kubernetes.io/).
 {:tip}
@@ -103,7 +103,7 @@ A redesigned version of the {{site.data.keyword.containerlong_notm}} plug-in is 
 **Tip:** To see the version of the {{site.data.keyword.containerlong_notm}} plug-in, run the following command.
 
 ```
-ibmcloudKKB10 plugin list
+ibmcloud11 plugin list
 ```
 {: pre}
 
@@ -1663,7 +1663,7 @@ ibmcloud ks kube-versions
 ### ibmcloud ks cluster-service-bind
 {: #cs_cluster_service_bind}
 
-Create service credentials of an {{site.data.keyword.Bluemix_notm}} service and store these credentials in a Kubernetes secret in your cluster. To view available {{site.data.keyword.Bluemix_notm}} services from the {{site.data.keyword.Bluemix_notm}} catalog, run `ibmcloudKKB10 service offerings`. **Note**: You can only add {{site.data.keyword.Bluemix_notm}} services that support service keys.
+Create service credentials of an {{site.data.keyword.Bluemix_notm}} service and store these credentials in a Kubernetes secret in your cluster. To view available {{site.data.keyword.Bluemix_notm}} services from the {{site.data.keyword.Bluemix_notm}} catalog, run `ibmcloud11 service offerings`. **Note**: You can only add {{site.data.keyword.Bluemix_notm}} services that support service keys.
 {: shortdesc}
 
 For more information about service binding and what services you can add to your cluster, see [Adding services by using IBM Cloud service binding](/docs/containers?topic=containers-service-binding).
@@ -1687,11 +1687,11 @@ ibmcloud ks cluster-service-bind --cluster CLUSTER --namespace KUBERNETES_NAMESP
 <dd>The name of the Kubernetes namespace where you want to create the Kubernetes secret for your service credentials. This value is required.</dd>
 
 <dt><code>--service <em>SERVICE_INSTANCE</em></code></dt>
-<dd>The name of the {{site.data.keyword.Bluemix_notm}} service instance that you want to bind. To find the name, run <code>ibmcloudKKB10 service list</code> for Cloud Foundry services, and <code>ibmcloudKKB10 resource service-instances</code> for IAM-enabled services. This value is required. </dd>
+<dd>The name of the {{site.data.keyword.Bluemix_notm}} service instance that you want to bind. To find the name, run <code>ibmcloud11 service list</code> for Cloud Foundry services, and <code>ibmcloud11 resource service-instances</code> for IAM-enabled services. This value is required. </dd>
 
 <dt><code>--role <em>IAM_SERVICE_ROLE</em></code></dt>
 <dd>The {{site.data.keyword.Bluemix_notm}} IAM role that you want the service key to have. This value is optional and can be used for IAM-enabled services only. If you do not set this option, your service credentials are automatically created and assigned the IAM **Writer** service access role. If you want to use existing service keys by specifying the `--key` option, do not include this option.<br><br>
-To list available roles for the service, run `ibmcloudKKB10 iam roles --service <service_name>`. The service name is the name of the service in the catalog which you can get by running `ibmcloudKKB10 catalog search`.  </dd>
+To list available roles for the service, run `ibmcloud11 iam roles --service <service_name>`. The service name is the name of the service in the catalog which you can get by running `ibmcloud11 catalog search`.  </dd>
 
 <dt><code>-s</code></dt>
 <dd>Do not show the message of the day or update reminders. This value is optional.</dd>
@@ -1845,7 +1845,7 @@ ibmcloud ks key-protect-enable --cluster CLUSTER_NAME_OR_ID --key-protect-url EN
 <dd>The {{site.data.keyword.keymanagementserviceshort}} endpoint for your cluster instance. To get the endpoint, see [service endpoints by region](/docs/services/key-protect?topic=key-protect-regions#service-endpoints).</dd>
 
 <dt><code>--key-protect-instance INSTANCE_GUID</code></dt>
-<dd>Your {{site.data.keyword.keymanagementserviceshort}} instance GUID. To get the instance GUID, run <code>ibmcloudKKB10 resource service-instance SERVICE_INSTANCE_NAME --id</code> and copy the second value (not the full CRN).</dd>
+<dd>Your {{site.data.keyword.keymanagementserviceshort}} instance GUID. To get the instance GUID, run <code>ibmcloud11 resource service-instance SERVICE_INSTANCE_NAME --id</code> and copy the second value (not the full CRN).</dd>
 
 <dt><code>--crk ROOT_KEY_ID</code></dt>
 <dd>Your {{site.data.keyword.keymanagementserviceshort}} root key ID. To get the CRK, see [Viewing keys](/docs/services/key-protect?topic=key-protect-view-keys#view-keys).</dd>
@@ -4779,7 +4779,7 @@ Refer to those commands to create and manage Kubernetes clusters in {{site.data.
 
 To install the plug-in, see [Installing the CLI](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps).
 
-In the terminal, you are notified when updates to the `ibmcloudKKB10` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
+In the terminal, you are notified when updates to the `ibmcloud11` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
 
 Looking for `ibmcloud cr` commands? See the [{{site.data.keyword.registryshort_notm}} CLI reference](/docs/services/Registry?topic=container-registry-cli-plugin-containerregcli). Looking for `kubectl` commands? See the [Kubernetes documentation ![External link icon](../icons/launch-glyph.svg "External link icon")](https://kubectl.docs.kubernetes.io/).
 {:tip}
@@ -4852,7 +4852,7 @@ A redesigned version of the {{site.data.keyword.containerlong_notm}} plug-in is 
 **Tip:** To see the version of the {{site.data.keyword.containerlong_notm}} plug-in, run the following command.
 
 ```
-ibmcloudKKB10 plugin list
+ibmcloud11 plugin list
 ```
 {: pre}
 
@@ -6412,7 +6412,7 @@ ibmcloud ks kube-versions
 ### ibmcloud ks cluster-service-bind
 {: #cs_cluster_service_bind}
 
-Create service credentials of an {{site.data.keyword.Bluemix_notm}} service and store these credentials in a Kubernetes secret in your cluster. To view available {{site.data.keyword.Bluemix_notm}} services from the {{site.data.keyword.Bluemix_notm}} catalog, run `ibmcloudKKB10 service offerings`. **Note**: You can only add {{site.data.keyword.Bluemix_notm}} services that support service keys.
+Create service credentials of an {{site.data.keyword.Bluemix_notm}} service and store these credentials in a Kubernetes secret in your cluster. To view available {{site.data.keyword.Bluemix_notm}} services from the {{site.data.keyword.Bluemix_notm}} catalog, run `ibmcloud11 service offerings`. **Note**: You can only add {{site.data.keyword.Bluemix_notm}} services that support service keys.
 {: shortdesc}
 
 For more information about service binding and what services you can add to your cluster, see [Adding services by using IBM Cloud service binding](/docs/containers?topic=containers-service-binding).
@@ -6436,11 +6436,11 @@ ibmcloud ks cluster-service-bind --cluster CLUSTER --namespace KUBERNETES_NAMESP
 <dd>The name of the Kubernetes namespace where you want to create the Kubernetes secret for your service credentials. This value is required.</dd>
 
 <dt><code>--service <em>SERVICE_INSTANCE</em></code></dt>
-<dd>The name of the {{site.data.keyword.Bluemix_notm}} service instance that you want to bind. To find the name, run <code>ibmcloudKKB10 service list</code> for Cloud Foundry services, and <code>ibmcloudKKB10 resource service-instances</code> for IAM-enabled services. This value is required. </dd>
+<dd>The name of the {{site.data.keyword.Bluemix_notm}} service instance that you want to bind. To find the name, run <code>ibmcloud11 service list</code> for Cloud Foundry services, and <code>ibmcloud11 resource service-instances</code> for IAM-enabled services. This value is required. </dd>
 
 <dt><code>--role <em>IAM_SERVICE_ROLE</em></code></dt>
 <dd>The {{site.data.keyword.Bluemix_notm}} IAM role that you want the service key to have. This value is optional and can be used for IAM-enabled services only. If you do not set this option, your service credentials are automatically created and assigned the IAM **Writer** service access role. If you want to use existing service keys by specifying the `--key` option, do not include this option.<br><br>
-To list available roles for the service, run `ibmcloudKKB10 iam roles --service <service_name>`. The service name is the name of the service in the catalog which you can get by running `ibmcloudKKB10 catalog search`.  </dd>
+To list available roles for the service, run `ibmcloud11 iam roles --service <service_name>`. The service name is the name of the service in the catalog which you can get by running `ibmcloud11 catalog search`.  </dd>
 
 <dt><code>-s</code></dt>
 <dd>Do not show the message of the day or update reminders. This value is optional.</dd>
@@ -6594,7 +6594,7 @@ ibmcloud ks key-protect-enable --cluster CLUSTER_NAME_OR_ID --key-protect-url EN
 <dd>The {{site.data.keyword.keymanagementserviceshort}} endpoint for your cluster instance. To get the endpoint, see [service endpoints by region](/docs/services/key-protect?topic=key-protect-regions#service-endpoints).</dd>
 
 <dt><code>--key-protect-instance INSTANCE_GUID</code></dt>
-<dd>Your {{site.data.keyword.keymanagementserviceshort}} instance GUID. To get the instance GUID, run <code>ibmcloudKKB10 resource service-instance SERVICE_INSTANCE_NAME --id</code> and copy the second value (not the full CRN).</dd>
+<dd>Your {{site.data.keyword.keymanagementserviceshort}} instance GUID. To get the instance GUID, run <code>ibmcloud11 resource service-instance SERVICE_INSTANCE_NAME --id</code> and copy the second value (not the full CRN).</dd>
 
 <dt><code>--crk ROOT_KEY_ID</code></dt>
 <dd>Your {{site.data.keyword.keymanagementserviceshort}} root key ID. To get the CRK, see [Viewing keys](/docs/services/key-protect?topic=key-protect-view-keys#view-keys).</dd>
